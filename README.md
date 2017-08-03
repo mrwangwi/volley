@@ -9,6 +9,10 @@ RequestManager.getInstance().init(this);
 a.接口返回：{"code":1,"message":"SUCCESS","data":{"timeStamp":1501750360}}
 
 
+
+
+
+
 b.创建实体Test.class
 
 c.直接请求获取对象
