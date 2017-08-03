@@ -3,9 +3,9 @@
 <h3> 使用方法：</h3>
 
 1.将 library_volley 文件夹以 Module添加到自己的工程，并且确保
-<h6> dependencies {</h6>
-<h6> compile project(':library_volley')</h6>
-<h6> }</h6>
+\ndependencies {
+\n compile project(':library_volley')
+\n }
 2.添加网络权限
 <h6> \<uses-permission android:name="android.permission.INTERNET" /\></h6>
 3.APP入口即extends Application并添加以下代码
