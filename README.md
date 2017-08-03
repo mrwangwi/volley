@@ -5,5 +5,29 @@ compile project(':library_volley')
 <h4>2.添加网络权限</h4>
 <h4>3.APP入口即extends Application并添加以下代码</h4>
 RequestManager.getInstance().init(this);
-<h4>4.具体使用详情前往MainActivity查看</h4>
+<h4>4.以下是简单例子，具体使用详情前往MainActivity查看</h4>
+接口返回：
+{
+    "code":1,
+    "message":"SUCCESS",
+    "data":{
+        "timeStamp":1501750360
+    }
+}
+
+创建实体Test.class
+
+直接请求获取对象
+RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
+            @Override
+            public void onSuccess(Test test) {
+                //请求成功，test直接使用
+                Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+
+            }
+        }));
 
