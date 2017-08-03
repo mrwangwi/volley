@@ -8,12 +8,10 @@ RequestManager.getInstance().init(this);
 <h4>4.以下是简单例子，具体使用详情前往MainActivity查看</h4>
 接口返回：
 {
-    "code":1,
-    "message":"SUCCESS",
-    "data":{
-        "timeStamp":1501750360
+            "code":1,
+            "message":"SUCCESS",
+            "data":{"timeStamp":1501750360}
     }
-}
 
 创建实体Test.class
 
