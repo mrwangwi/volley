@@ -1,11 +1,14 @@
 <h1> 对volley的二次封装，支持http/https，支持添加headers</h1>
 
- 使用方法：
+<h3> 使用方法：</h3>
 
 1.将 library_volley 文件夹以 Module添加到自己的工程，并且确保
-  dependencies {
-      compile project(':library_volley')
-  }
+<h6> dependencies {</h6>
+<h6> compile project(':library_volley')</h6>
+<h6> }</h6>
+  
+      
+  
   
 2.添加网络权限\<uses-permission android:name="android.permission.INTERNET" /\>
 
