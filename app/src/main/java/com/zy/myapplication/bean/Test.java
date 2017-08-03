@@ -35,9 +35,6 @@ public class Test {
     }
 
     public static class DataBean {
-        /**
-         * timeStamp : 1501728840
-         */
 
         private int timeStamp;
 
