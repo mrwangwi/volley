@@ -9,9 +9,9 @@ RequestManager.getInstance().init(this);
 a.接口返回：{"code":1,"message":"SUCCESS","data":{"timeStamp":1501750360}}
 <p></p>
 b.创建实体Test.class
-
+<p></p>
 c.直接请求获取对象
-
+<p></p>
 RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
 
             @Override
