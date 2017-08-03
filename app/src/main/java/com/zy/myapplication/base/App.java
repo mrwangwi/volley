@@ -1,4 +1,4 @@
-package com.zy.myapplication.bean;
+package com.zy.myapplication.base;
 
 import android.app.Application;
 
