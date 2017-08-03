@@ -6,13 +6,8 @@
 <h6> dependencies {</h6>
 <h6> compile project(':library_volley')</h6>
 <h6> }</h6>
-  
-      
-  
-  
-2.添加网络权限\<uses-permission android:name="android.permission.INTERNET" /\>
-
+2.添加网络权限
+<h6> \<uses-permission android:name="android.permission.INTERNET" /\></h6>
 3.APP入口即extends Application并添加以下代码
-  RequestManager.getInstance().init(this);
-  
+<h6> RequestManager.getInstance().init(this);</h6>
 4.具体使用详情前往MainActivity查看
