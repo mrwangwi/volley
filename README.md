@@ -15,7 +15,6 @@ c.直接请求获取对象
 RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
 
             @Override
-
             public void onSuccess(Test test) {
 
                 //请求成功，test直接使用
@@ -26,7 +25,6 @@ RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessE
 
 
             @Override
-
             public void onError(String errorMsg) {
 
             }
