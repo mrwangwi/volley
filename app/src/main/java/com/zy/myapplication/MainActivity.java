@@ -23,14 +23,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        HashMap<String, String> map = new HashMap<>();
-        RequestManager.getInstance().get(url, map, new ReqListener<>(Test.class, new Success<Test>() {
+        HashMap<String, String> data = new HashMap<>();
+        data.put("key", "value");
+
+        //post Success
+        RequestManager.getInstance().post(url, data, new ReqListener<>(Test.class, new Success<Test>() {
             @Override
             public void onSuccess(Test test) {
                 Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
             }
         }));
-        RequestManager.getInstance().get(url, map, new ReqListener<>(Test.class, new SuccessError<Test>() {
+
+
+        //post Success和Error
+        RequestManager.getInstance().post(url, data, new ReqListener<>(Test.class, new SuccessError<Test>() {
             @Override
             public void onSuccess(Test test) {
                 Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
@@ -41,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }));
-        RequestManager.getInstance().post(url, map, new ReqListener<>(Test.class, new RequestSuccessError<Test>() {
+
+
+        //post Request和Success和Error
+        RequestManager.getInstance().post(url, data, new ReqListener<>(Test.class, new RequestSuccessError<Test>() {
             @Override
             public void onRequest() {
 
@@ -57,5 +66,37 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }));
+
+
+        //get
+        RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
+            @Override
+            public void onSuccess(Test test) {
+                Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
+            }
+
+            @Override
+            public void onError(String errorMsg) {
+
+            }
+        }));
+
+        //添加header
+        HashMap<String, String> headers = new HashMap<>();
+        headers.put("key", "value");
+        //post
+        RequestManager.getInstance().post(url, data, new ReqListener<>(Test.class, new Success<Test>() {
+            @Override
+            public void onSuccess(Test test) {
+                Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
+            }
+        }), headers);
+        //get
+        RequestManager.getInstance().get(url, data, new ReqListener<>(Test.class, new Success<Test>() {
+            @Override
+            public void onSuccess(Test test) {
+                Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
+            }
+        }), headers);
     }
 }

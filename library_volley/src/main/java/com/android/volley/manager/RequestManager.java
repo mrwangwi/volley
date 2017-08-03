@@ -88,6 +88,10 @@ public class RequestManager {
         return this.get(url, requestListener, true, actionId);
     }
 
+    public LoadController get(String url, RequestListener requestListener) {
+        return this.get(url, requestListener, true, 0);
+    }
+
     public LoadController get(String url, RequestListener requestListener,
                               boolean shouldCache, int actionId) {
         return this.request(Method.GET, url, null, null, requestListener,
