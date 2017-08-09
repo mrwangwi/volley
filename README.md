@@ -3,15 +3,10 @@
 <h4>1.添加依赖</h4>
 
     allprojects{
-
         repositories {
-
         ...
-
         maven { url 'https://jitpack.io' }
-
         }
-
     }
 
     dependencies{
