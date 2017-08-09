@@ -15,9 +15,7 @@
     }
 
     dependencies{
-
         compile 'com.github.mrwangwi:volley:1.0'
-
     }
 
 
