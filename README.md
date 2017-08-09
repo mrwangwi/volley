@@ -35,6 +35,7 @@ b.创建实体Test.class(Test内容项目中查看)
 <p></p>
 c.直接请求获取对象
 <p></p>
+
     RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
 
             @Override
@@ -49,5 +50,6 @@ c.直接请求获取对象
 
             }
         }));
+
 <h3> 更多需求，请发邮件至93987169@qq.com </h3>
 
