@@ -19,6 +19,7 @@
     RequestManager.getInstance().init(this);
 <h4>4.以下是简单例子，更多使用详情前往MainActivity查看</h4>
 a.接口返回：
+
     {
         "code":1,
         "message":"SUCCESS",
@@ -26,6 +27,7 @@ a.接口返回：
             "timeStamp":1501750360
         }
     }
+
 <p></p>
 b.创建实体Test.class(Test内容项目中查看)
 <p></p>
