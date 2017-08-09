@@ -1,6 +1,7 @@
 <h1> 对volley的二次封装，支持http/https，支持添加headers</h1>
 <h3> 使用方法：</h3>
 <h4>1.添加依赖</h4>
+
     allprojects {
 		repositories {
 			...
@@ -11,6 +12,7 @@
 	dependencies {
     	        compile 'com.github.mrwangwi:volley:1.0'
     	}
+
 <h4>2.添加网络权限</h4>
 <h4>3.APP入口即extends Application并添加以下代码</h4>
 RequestManager.getInstance().init(this);
