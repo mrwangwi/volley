@@ -3,14 +3,23 @@
 <h4>1.添加依赖</h4>
 
 allprojects{
+
     repositories {
+
     ...
+
     maven { url 'https://jitpack.io' }
+
     }
+
 }
+
 dependencies{
+
     compile 'com.github.mrwangwi:volley:1.0'
+
 }
+
 
 <h4>2.添加网络权限</h4>
 <h4>3.APP入口即extends Application并添加以下代码</h4>
