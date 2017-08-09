@@ -2,23 +2,23 @@
 <h3> 使用方法：</h3>
 <h4>1.添加依赖</h4>
 
-allprojects{
+    allprojects{
 
-    repositories {
+        repositories {
 
-    ...
+        ...
 
-    maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io' }
+
+        }
 
     }
 
-}
+    dependencies{
 
-dependencies{
+        compile 'com.github.mrwangwi:volley:1.0'
 
-    compile 'com.github.mrwangwi:volley:1.0'
-
-}
+    }
 
 
 <h4>2.添加网络权限</h4>
