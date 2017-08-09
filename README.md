@@ -21,21 +21,14 @@ b.创建实体Test.class(Test内容项目中查看)
 c.直接请求获取对象
 <p></p>
 RequestManager.getInstance().get(url, new ReqListener<>(Test.class, new SuccessError<Test>() {
-
-            @Override
-            public void onSuccess(Test test) {
-
-                //请求成功，test直接使用
-
-                Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
-
-            }
-
-
-            @Override
-            public void onError(String errorMsg) {
-
-            }
-        }));
+@Override
+public void onSuccess(Test test) {
+//请求成功，test直接使用
+Log.e("MainActivity", "testBean.getData().getTimeStamp():" + test.getData().getTimeStamp());
+}
+@Override
+public void onError(String errorMsg) {
+}
+}));
 <h3> 更多需求，请发邮件至93987169@qq.com </h3>
 
