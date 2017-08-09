@@ -16,7 +16,9 @@
 
 <h4>2.添加网络权限</h4>
 <h4>3.APP入口即extends Application并添加以下代码</h4>
+
     RequestManager.getInstance().init(this);
+
 <h4>4.以下是简单例子，更多使用详情前往MainActivity查看</h4>
 a.接口返回：
 
